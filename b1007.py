@@ -17,6 +17,7 @@ def primes():
         k = next(it)
         yield k
         it = filter(not_divisible(k), it)
+        
 def main():
     n = int(input())
     ans = 0
@@ -30,8 +31,6 @@ def main():
             break
 
     print(ans)
-    return 0
-
 
 if __name__ == '__main__':
     main()
